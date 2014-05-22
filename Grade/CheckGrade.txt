@@ -1,0 +1,49 @@
+*** Settings ***
+Library      Selenium2Library
+Library 	 OperatingSystem
+
+*** Variables ***
+
+
+*** Testcases ***
+Grade A 80 score
+    Open Browser    http://demo-jenkins-web.herokuapp.com
+    Maximize Browser Window    
+    Wait Until Page Contains Element    score
+    Input Text    score    80
+    Click Element    convert
+    Wait Until Page Contains    A
+    
+Grade B 75 score
+    Open Browser    http://demo-jenkins-web.herokuapp.com
+    Maximize Browser Window
+    Wait Until Page Contains Element    score
+    Input Text    score    75
+    Click Element    convert
+    Wait Until Page Contains    B
+
+Grade C 68 score
+    Open Browser    http://demo-jenkins-web.herokuapp.com
+    Maximize Browser Window
+    Wait Until Page Contains Element    score
+    Input Text    score    75
+    Click Button    convert
+    Wait Until Page Contains    C
+
+Grade D 52 score
+    Open Browser    http://demo-jenkins-web.herokuapp.com
+    Maximize Browser Window
+    Wait Until Page Contains Element    score
+    Input Text    score    75
+    Click Button    convert
+    Wait Until Page Contains    D
+
+Grade F 13 score
+    Go To    http://demo-jenkins-web.herokuapp.com
+    Maximize Browser Window
+    Wait Until Page Contains Element    score
+    Input Text    score    75
+    Click Button    convert
+    Wait Until Page Contains    F
+    
+*** Keywords ***
