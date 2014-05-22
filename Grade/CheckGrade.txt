@@ -12,6 +12,7 @@ Grade A
     Input Text    score    80
     Click Element    convert
     Wait Until Page Contains    A    30
+    Close Browser
     
 Grade B
     Open Browser    ${DEMO URL}
@@ -19,6 +20,7 @@ Grade B
     Input Text    score    75
     Click Element    convert
     Wait Until Page Contains    B    30
+    Close Browser
 
 Grade C
     Open Browser    ${DEMO URL}
@@ -26,6 +28,7 @@ Grade C
     Input Text    score    68
     Click Button    convert
     Wait Until Page Contains    C    30
+    Close Browser
 
 Grade D
     Open Browser    ${DEMO URL}
@@ -33,6 +36,7 @@ Grade D
     Input Text    score    52
     Click Button    convert
     Wait Until Page Contains    D    30
+    Close Browser
 
 Grade F
     Open Browser    ${DEMO URL}
@@ -40,5 +44,6 @@ Grade F
     Input Text    score    13
     Click Button    convert
     Wait Until Page Contains    F    30
+    Close Browser
     
 *** Keywords ***
